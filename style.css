@@ -1,0 +1,76 @@
+/*.riga_pari { background-color: #efefef; }
+.evento-click { background-color: #efefef; }
+.evento-mouseover { color: #A33024; }*/
+
+/* Capitolo 4 - Esempio tooltips */
+
+/*a:visited,
+a:link { position: relative; }
+a:hover,
+a:focus,
+a:active { z-index: 1; }
+
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  padding: 5px 10px;
+  background: #A33024;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 0.8em;
+}*/
+
+/* Capitolo 4 - Esempio fisarmonica */
+ul.accordion {
+  padding: 0;
+  margin: 30px;
+}
+
+ul.accordion > li::after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+
+ul.accordion > li {
+  list-style: none;
+  border: 2px solid #434750;
+}
+
+ul.accordion > li > h2 {
+  margin: 0;
+  padding: 10px;
+  background-color: #434750;
+}
+
+ul.accordion > li h2 a:hover,
+ul.accordion > li h2 a:focus,
+ul.accordion > li h2 a:visited,
+ul.accordion > li h2 a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+ul.accordion > li p,
+ul.accordion > li h3 {
+  margin-top: 0;
+}
+ul.accordion > li div.data,
+ul.accordion > li div.links {
+  float: left;
+  margin: 0;
+  padding: 20px 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+ul.accordion > li div.data { width: 70%; }
+ul.accordion > li div.links { width: 30%; }
+
+ul.accordion > li div.links h3 { font-size: 1em; }
+ul.accordion > li div.links ul > li { list-style: none; }
+ul.accordion > li div.links ul { padding-left: 0; }
+
+.collapsed { height: none; }
+.expanded { height: block; }
