@@ -6,26 +6,8 @@ Commento
 
 var Accordition = {
   init: function(){
-    var elenchi = Core.getElementsByClass('accordion');
-    for (var i = 0; i < elenchi.length; i++) {
-      var vociElenco = elenchi[i].childNodes;
-      for (var k = 0; k < vociElenco.length; k++) {
-        if (vociElenco[k].nodeType == 1) {
-          var titolo = vociElenco[k].getElementsByTagName('h2');
-          var linkTitolo = titolo[0].getElementsByTagName('a');
-          Core.addEventListener(linkTitolo[0], 'click', Accordition.clickListener);
-          Core.addEventListener(linkTitolo[0], 'focus', Accordition.focusListener);
-          Core.addEventListener(linkTitolo[0], 'blur', Accordition.blurListener);
-        };
-      };
-    };
+
   },
-  clickListener: function(){},
-  focusListener: function(){},
-  blurListener: function(){},
-  collapse: function(){},
-  collapseAll: function(){},
-  expande: function(){}
 };
 
 Core.start(Accordition);
